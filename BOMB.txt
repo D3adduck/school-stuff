@@ -1,0 +1,36 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: thing code check if the word bomb is in your sentence
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+            Console.WriteLine("enter a sentence and we will check for bombs");
+
+            string boom = Console.ReadLine();
+
+            if (boom.Contains("bomb", StringComparison.InvariantCultureIgnoreCase) == true) { 
+
+
+
+
+            Console.WriteLine("theres a bomb!!!");
+              }
+            else
+            {
+
+                Console.WriteLine("theres no bombs its safe");
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: this code will reverse any word you put in it
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+            Console.WriteLine("enter a word");
+            string word = Console.ReadLine();
+            char[] stringarray = word.ToCharArray();
+            Array.Reverse(stringarray);
+            string reversedStr = new string(stringarray);
+            Console.WriteLine("the inital word was " + word + " ");
+            Console.Write("the word reversed is " + reversedStr + " ");
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}

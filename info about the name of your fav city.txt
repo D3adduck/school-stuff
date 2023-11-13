@@ -1,0 +1,31 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description:this code displays information about the users favourite city
+ */
+using Microsoft.VisualBasic;
+
+namespace assignment
+{
+    public class city
+    {
+        public static void Main()
+        {
+
+            Console.WriteLine("enter your favourite city");
+            string city_name = Console.ReadLine();
+            string city_uppercase = city_name.ToUpper();
+            string city_lowercase = city_name.ToLower();
+            string city_first = city_name.Substring(0, 1);
+
+            int num_charaters = city_name.Length;
+
+            Console.WriteLine("First chararter   " + city_first);
+            Console.WriteLine("Uppercase   " + city_uppercase);
+            Console.WriteLine("Lowercase   " + city_lowercase);
+            Console.WriteLine("Number of charaters   " + num_charaters);
+
+            Console.ReadKey();
+        }
+    }
+}

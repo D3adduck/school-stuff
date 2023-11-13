@@ -1,0 +1,32 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: this code takes a number a puts it in rows of stars
+ */
+using System.Data;
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+           
+
+            Console.WriteLine("enter a number and it will be put in rows of stars");
+            int stack, line, num;
+            num = Convert.ToInt32(Console.ReadLine());
+            for (line = 1; line <= num; line++)
+            {
+                for (stack = 1; stack <= line; stack++)
+                {
+                    Console.Write(" * ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/*
+ Name:austin 
+ Class: Comp sci 20s
+ Description: tells you if you got a good score on the test
+ */
+using static System.Formats.Asn1.AsnWriter;
+
+namespace ConsoleApp1
+{
+    public class Hello
+    {
+        public static void Main()
+        {
+
+           
+            Console.WriteLine("Enter your test score");
+            int score = Convert.ToInt32(Console.ReadLine());
+
+            if (score >= 90)
+            {
+                Console.WriteLine("your grade is A");
+            }
+            else if (score >= 80)
+            {
+                Console.WriteLine("your grade is B");
+            }
+            else if (score >= 70)
+            {
+                Console.WriteLine("your grade is C");
+            }
+            else if (score >= 60)
+            {
+                Console.WriteLine("your grade is D");
+            }
+            else if (score >= 50)
+            {
+                Console.WriteLine("your grade is E");
+            }
+            else
+            {
+                Console.WriteLine("your grade is F");
+            }
+
+
+        }
+    }
+}

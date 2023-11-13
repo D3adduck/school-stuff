@@ -1,0 +1,50 @@
+*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: 
+ */
+using System.Diagnostics;
+using System.Linq.Expressions;
+using System.Runtime.InteropServices;
+
+namespace switch_statements
+{
+    public class switchs
+    {
+        public static void Main()
+        {
+
+       Console.WriteLine("Enter Your Name To get your grade");
+            String Name = Console.ReadLine();
+
+
+            switch (Name)
+            {
+                case "greg":
+                    Console.WriteLine("68%");
+                    break;
+                case "austin":
+                    Console.WriteLine("92%");
+                    break;
+                case "ben":
+                    Console.WriteLine("0%");
+                    break;
+                case "jesse":
+                    Console.WriteLine("100%");
+                    break;
+
+                default:
+                    Console.WriteLine("invalid unput");
+                    break;
+
+
+            }   
+
+            
+
+
+
+            Console.ReadKey();
+        }
+    }
+}

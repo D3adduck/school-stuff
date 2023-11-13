@@ -1,0 +1,73 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: 
+ */
+using System.Diagnostics.Metrics;
+using System.Runtime.InteropServices;
+
+
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+            /*
+
+                        do
+                        {
+                            Console.WriteLine("this loop is working");
+                        } while (1 > 2);//regardles of whether or not its true or false
+                                        // it will work once
+                        /*
+
+                                    int counter = 10;
+
+                                beginning: // this is a label
+
+                                    Console.WriteLine(counter);
+                                    counter = counter + 1;
+
+                                    if (counter >= 10)
+                                    {
+                                        goto beginning; // going back to the label
+                                    }
+
+
+                                    bool keeprunning = true;
+                                    string decision = "n";
+                                    while (keeprunning)
+                                    {
+                                        Console.WriteLine("this loop is running"); 
+                                        Console.WriteLine("press Y to stop");
+                                      decision = Console.ReadLine();   
+
+                                        if (decision == "Y") { keeprunning=false; }
+                                    }
+                                    */
+            //the condition needs to be true to run it all at once
+
+            //int counter = 1;
+
+          //  do
+          //  {
+          //      Console.WriteLine(counter);
+          //     counter++;
+          // } while (counter <= 10);
+
+         //   do
+         //   {
+         //       Console.WriteLine("this loop is working");
+           //     counter++;
+          //  } while (counter <= 10 );
+
+
+
+
+            Console.ReadKey();
+        }
+    }
+}

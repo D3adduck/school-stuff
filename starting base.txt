@@ -1,0 +1,22 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: 
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+        
+
+          
+
+           
+
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: 
+ */
+using System.Runtime.InteropServices;
+
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+
+
+            /*
+            // Bool Accepts True and False Values
+            bool IsSkyBlue = true;
+            bool IsFoodReady = true;
+
+            // with the && (AND) Operator, the statement only activates
+            // If all the statements are true
+            // False + True = False
+            // True + False = False
+            // True + True = True
+            if(IsSkyBlue && IsFoodReady) { Console.WriteLine("Nice, we can go for a picnic :3");  }
+            else { Console.WriteLine("We Sadly Can't Go... :<"); }
+            */
+
+            Console.WriteLine("Enter Your Grade To See If You're Allowed on the field trip");
+
+            int grade = Convert.ToInt32(Console.ReadLine());
+
+            
+
+
+
+            if (grade == 11 || grade == 12)
+            {
+                Console.WriteLine("you got premission to go on the trip");
+            }
+            else
+            {
+                Console.WriteLine("you have not got permissoin to go on the trip");
+            }
+            //////////////////////////////////////////////////////////////
+            if (grade == 11 || grade == 12)
+            {
+                Console.WriteLine("you got premission to go on the trip");
+            }
+            else
+            {
+                Console.WriteLine("you have not got permissoin to go on the trip");
+            }
+
+        }
+    }
+}

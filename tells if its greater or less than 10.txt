@@ -1,0 +1,40 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: tells you if a number is greater then less than or equal too
+ */
+using System.ComponentModel.Design;
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+
+            Console.WriteLine("enter the number");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            //less than
+            if (num < 10)
+            {
+                Console.WriteLine("the number is less than 10 ");
+            }
+            //eqaul
+            else if (num == 10) 
+            {
+                Console.WriteLine("the number is 10 ");
+            }
+            //greater than
+            else
+            {
+                Console.WriteLine("the number is greater that 10 ");
+            }
+
+            Console.ReadKey();
+           
+        }
+    }
+}

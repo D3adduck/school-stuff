@@ -1,0 +1,36 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: tells you the avarage test score
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+            Console.WriteLine("enter first test score");
+            double pp = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("enter second test score");
+            double gg = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("enter third test score");
+            double dd = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("your first number is " + pp);
+            Console.WriteLine("your second number is " + gg);
+            Console.WriteLine("your third number is " + dd);
+
+            double average = (pp + gg + dd);
+
+            double answer = average / 3;
+
+            Console.WriteLine("the average of the three numbers you listed is " + answer+" ");
+
+            Console.ReadKey();
+
+        }
+    }
+}

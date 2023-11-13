@@ -1,0 +1,49 @@
+/*
+ name: austin
+ class: comp sci 20
+ description:this code gets text from the user and prints text
+
+*/
+using Microsoft.VisualBasic;
+
+namespace consoleapp2 
+{ 
+
+
+    public class Standardoutin
+    {
+
+        public static void Main() {
+          //  Console.WriteLine("what is your name"); //this prints the text then creats a new line
+          //  Console.Write(" my name is monkey");//prints the text but does not create a new line
+          //  Console.Write("\n nice to meet you mr monkey");//prints the text but does not create new line
+
+
+           // Console.Write("\nhello \n mr monkey!");// this charater \n creates a new line 
+           // Console.WriteLine("\n what command do you wish to run mr monkey?");
+          //  Console.Write("\ti wish to run you ove with a three wheeled bike"); // the charater \t creates more space between text
+           Console.WriteLine("what is your name?");
+            string name = Console.ReadLine();// a string is a list of charaters
+            Console.WriteLine("how old are you");
+            int age = Convert.ToInt32(Console.ReadLine());//int is a number that does not have a decimal point
+            Console.WriteLine("how tall are you?");
+            Double height= Convert.ToDouble(Console.ReadLine());//double is a number that has a decimal point
+           // Console.WriteLine(" nice to meet you " + name + "\n your age is " + age + "\nyour height is " + height + " this informaion is false your lying");
+            Console.WriteLine("nice to meet you {0} \n your age is {1}\n your height is {2}",name,age,height );
+       
+        
+        
+        
+        }
+
+
+        
+            
+        
+        
+       
+    
+    }
+
+
+}

@@ -1,0 +1,33 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: this code will ask you to find the random number between 1 and 10
+ */
+using System.Data;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+            int ans = 0;
+            Console.WriteLine("guess the right number between 1 and 10");
+            ans = Convert.ToInt32(Console.ReadLine());
+            Random bla = new Random();
+       
+            int Value = bla.Next(1, 10);
+            Console.WriteLine(Value);
+            while (ans != Value)
+            {
+                Console.WriteLine("false");
+                ans = Convert.ToInt32(Console.ReadLine());     
+            }
+            Console.WriteLine("true");
+            
+            Console.ReadKey();
+        }
+    }
+}

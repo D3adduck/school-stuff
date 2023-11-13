@@ -1,0 +1,29 @@
+/* 
+Name: austin
+Class: comp sci 20s
+Description: tells you the sum of the users number
+*/
+
+
+using System.Diagnostics.Metrics;
+
+namespace AddTill
+{
+    public class AddlikeTill
+    {
+        public static void Main()
+        {
+            int ans = 0;
+            Console.WriteLine("Enter the Upper Bound");
+
+            int upb = Convert.ToInt32(Console.ReadLine());
+            for (int num = 0; num <= upb; num++)
+            {
+                ans = ans + num;
+                Console.WriteLine(num);
+            }
+            Console.WriteLine("the Sum Of all numbers is " + ans);
+            Console.ReadKey();
+        }
+    }
+}

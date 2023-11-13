@@ -1,0 +1,35 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: this code ask for 5 integers from the user and ordering them from least to greatest
+ */
+using System.Runtime.InteropServices;
+
+namespace assignment
+{
+    public class arrays
+    {
+        public static void Main()
+        {
+            int[] numbers = new int[5];
+            Console.WriteLine("write first number please");
+             numbers[0] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("write second number please");
+             numbers[1] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("write third number please");
+             numbers[2] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("write fourth number please");
+             numbers[3] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("write a fifth please");
+             numbers[4] = Convert.ToInt32(Console.ReadLine());
+
+            Array.Sort(numbers);
+            Console.WriteLine(numbers[0] + " " + numbers[1] + " " + numbers[2] + " " + numbers[3] + " " + numbers[4]);
+
+
+
+
+
+        }
+    }
+}

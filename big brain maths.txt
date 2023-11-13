@@ -1,0 +1,76 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: does math
+ */
+using System.Data;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+            // this just changes the color of the words
+            Console.ForegroundColor = ConsoleColor.Blue;
+
+            do
+            {
+
+                double num1 = 0;
+                double num2 = 0;
+                double result = 0;
+
+                Console.WriteLine("------------------");
+                Console.WriteLine("calculator program");
+                Console.WriteLine("------------------");
+
+                Console.Write("Enter number 1: ");
+                num1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.Write("Enter number 2: ");
+                num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter an option: ");
+               // these ones below for console.write are just visual
+                Console.WriteLine("\t+ : Add");
+                Console.WriteLine("\t- : Subtract");
+                Console.WriteLine("\tx : Multiply");
+                Console.WriteLine("\t/ : Divide");
+                Console.Write("Enter an option: ");
+
+                //here the case and break are whats taking the users input and doing the math the case starts it and the break stops it
+                switch (Console.ReadLine())
+                {
+                    case "+":
+                        result = num1 + num2;
+                        Console.WriteLine($"Your result: {num1} + {num2} = " + result);
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        Console.WriteLine($"Your result: {num1} - {num2} = " + result);
+                        break;
+                    case "x":
+                        result = num1 * num2;
+                        Console.WriteLine($"Your result: {num1} * {num2} = " + result);
+                        break;
+                    case "/":
+                        result = num1 / num2;
+                        Console.WriteLine($"Your result: {num1} / {num2} = " + result);
+                        break;
+                    default:
+                        Console.WriteLine("that was not a valid option");
+                        break;
+                }
+                Console.Write("Would you like to continue? (Y = yes, N = No): ");
+            } while (Console.ReadLine().ToUpper() == "Y");
+
+            Console.WriteLine("bye!");
+
+            Console.ReadKey();
+        }
+    }
+}

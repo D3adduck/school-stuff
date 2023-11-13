@@ -1,0 +1,22 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: this code tells you how old you will be in five years
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+            Console.WriteLine("what year were you born");
+              int birthday = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("in five years youll be ");
+            Console.WriteLine( 2023 - birthday + 5);
+        }
+    }
+}
+

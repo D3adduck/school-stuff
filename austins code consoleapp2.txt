@@ -1,0 +1,31 @@
+/*
+ name: austin
+ class: comp sci 20
+ description:this code egets text from the user and prints text
+
+*/
+using Microsoft.VisualBasic;
+
+namespace consoleapp2 
+{ 
+
+
+    public class Standardoutin
+    {
+
+    public static void Main() {
+            Console.WriteLine("what is your name"); //this prints the text then creats a new line
+            Console.WriteLine("my name is monkey");//prints the text but does not create a new line
+            Console.WriteLine(" nice to meet you monkey");//prints the text but does not create new line
+
+
+            Console.Write("hello \n mr monkey!");// this charater \n creates a new line 
+            Console.WriteLine("what command do you wish to run mr monkey?");
+           
+
+        }
+    
+    }
+
+
+}

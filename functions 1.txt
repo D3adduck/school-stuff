@@ -1,0 +1,106 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: 
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class functionsclass
+    {
+        //void means empty return
+       //a void does not return anything
+        static void CustomMesseage(string word)
+        {
+
+            Console.WriteLine("*****"+word+"*****");
+           
+
+        }
+
+
+
+
+
+
+
+        //this function takes num 1 and num 2
+        // and returns there sum
+        static int sum(int num1, int num2)
+        {
+            return num1 + num2;
+
+
+        }
+        static int product(int num1, int num2)
+        {
+            return num1 = num2;
+
+
+        }
+/// <summary>
+/// 
+/// </summary>
+/// <param name="word"></param>
+/// <param name="tolower"></param>
+/// <returns></returns>
+        static string ToLowerOrToUpper(string word ,bool tolower)
+        {
+            if (tolower)
+            {
+
+                return word.ToLower();
+
+            }
+            else { 
+                return word.ToUpper();
+                    
+            }
+        }
+
+        public static void Main()
+        {
+
+            
+             Console.ForegroundColor = ConsoleColor.DarkYellow;
+        
+
+
+        Console.WriteLine("please enter word");
+            string input = Console.ReadLine();
+
+        
+            //we call functions by there names and () to it
+            //if the funtion takes input we put the input between
+            CustomMesseage(input);
+            CustomMesseage(input);
+
+
+            ////////////////////////////////////////////////////////
+
+            Console.WriteLine("enter the first number");
+            int first = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter the second number");
+            int second = Convert.ToInt32(Console.ReadLine());
+            // when a funtion returns a value we can to store that value in a varable to use in later
+           int result = sum(first, second);
+            Console.WriteLine("the sum is " + result);
+            result = product(first, second);
+            Console.WriteLine("the product is " + result);
+            /////////////////////////////////////////////////////////
+           Console.WriteLine("enter word");
+            input = Console.ReadLine();
+            string changeword = ToLowerOrToUpper(input, true);
+            Console.WriteLine(changeword);
+
+            changeword = ToLowerOrToUpper(input, false);
+            Console.WriteLine(changeword);
+
+
+
+
+        }
+    }
+}

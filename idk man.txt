@@ -1,0 +1,52 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description: counts lots
+ */
+using System.Runtime.InteropServices;
+
+
+
+namespace StandardOutIn
+{
+    public class OutIn
+    {
+        public static void Main()
+        {
+
+
+
+
+            int counter = 10;
+
+        beginning: // this is a label
+
+            Console.WriteLine(counter);
+            counter = counter + 1;
+
+            if (counter >= 10)
+            {
+                goto beginning; // going back to the label
+            }
+
+
+            bool keeprunning = true;
+            string decision = "n";
+            while (keeprunning)
+            {
+                Console.WriteLine("this loop is running"); 
+                Console.WriteLine("press Y to stop");
+              decision = Console.ReadLine();   
+
+                if (decision == "Y") { keeprunning=false; }
+            }
+
+
+
+
+            
+
+            Console.ReadKey();
+        }
+    }
+}

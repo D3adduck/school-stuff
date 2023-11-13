@@ -1,0 +1,46 @@
+/*
+ Name: austin
+ Class : Comp Sci 20s
+ Description:
+ */
+using System.Runtime.InteropServices;
+
+namespace StandardOutIn
+{
+    public class functionsclass
+    {
+        // when writing this function, if the variable does not have
+        // an initial value like string word, it is manditory
+        // if the varible has an initial value like bool showStars=False
+        // it is optional
+
+        static void custommessage(string word, bool showstars = false)
+        {
+            //with  optional input , if the user sends an input
+            //the variable does not send anyhting
+            // if the user does not send anything
+            //the variable will use the initial(default) value
+            if (showstars) {
+                Console.WriteLine("*****" + word + "*****");
+            }
+            else {
+
+                Console.WriteLine(word);
+                
+            }
+
+        }
+
+        public static void Main()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+            Console.WriteLine("enter a word");
+            string input = Console.ReadLine();
+            custommessage(input);
+            custommessage(input,showstars:true);
+            
+            Console.ReadKey();
+        }
+    }
+}
